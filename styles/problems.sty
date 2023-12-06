@@ -1,0 +1,21 @@
+\ProvidesPackage{styles/problems}
+
+\newcommand{\instructions}[1]{
+    \noindent\textbf{\underline{Instructions:}} #1
+    
+    \pageline
+}
+
+\newenvironment{problem}[2]{
+    \noindent\textbf{Problem #1:} #2
+} {
+    \sanityspace
+    \pageline
+}
+
+\newenvironment{case}[2]{
+    \textbf{\underline{Case #1}}: #2
+    \sanityspace
+}{
+    \sanityspace
+}

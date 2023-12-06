@@ -1,0 +1,19 @@
+\ProvidesPackage{styles/format}
+
+\newcommand{\pageline}{
+    \noindent\rule{\textwidth}{1pt}
+    \vspace{2mm}
+}
+\newcommand{\sanityspace}{\vspace{2mm}}
+
+\newenvironment{boxxed}{ % Start Part
+    \begin{center}
+    \begin{tabular}{|p{\textwidth}|}
+    \hline
+    \sanityspace
+} 
+{ % End Part
+    \\\hline
+    \end{tabular} 
+    \end{center}
+}
